@@ -40,7 +40,8 @@ export const baseRules = {
 			markers: ["*"],
 		},
 	],
-	eqeqeq: [2],
+	// eqeqeq 关闭:本机全局约定前端一律用 ==/!=(松散比较,跨 number/string 相等),禁 ===
+	eqeqeq: "off",
 	"accessor-pairs": [
 		2,
 		{

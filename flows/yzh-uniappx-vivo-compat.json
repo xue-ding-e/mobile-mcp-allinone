@@ -1,0 +1,13 @@
+[
+  {
+    "op": "launch_app",
+    "packageName": "io.dcloud.uniappx"
+  },
+  {
+    "op": "wait",
+    "ms": 2500
+  },
+  {
+    "op": "screenshot"
+  }
+]

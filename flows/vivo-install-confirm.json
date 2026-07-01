@@ -1,0 +1,18 @@
+[
+  {
+    "op": "log",
+    "message": "vivo 安装弹窗放行(继续安装→完成);用于 adb install / uni-launch 装基座时国产ROM拦截"
+  },
+  {
+    "op": "tap_text",
+    "text": "继续安装"
+  },
+  {
+    "op": "wait",
+    "ms": 6000
+  },
+  {
+    "op": "tap_text",
+    "text": "完成"
+  }
+]
