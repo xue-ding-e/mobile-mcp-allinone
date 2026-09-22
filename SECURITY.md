@@ -1,26 +1,17 @@
-# Security Policy
+# 安全说明
 
-## Supported Versions
+本文件适用于 xue-ding-e/mobile-mcp-allinone。
 
-All versions of this project are currently being supported with security updates.
+## 使用范围
 
-| Version | Supported          |
-| ------- | ------------------ |
-| All     | :white_check_mark: |
+本工具可以操作已连接的设备和应用。运行脚本或回放前，请核对目标设备、应用和步骤；设备测试也可能改变应用状态。
 
-## Important notes regarding use of mobile-mcp
+本地 MCP 配置、访问令牌、设备截图和调试日志不应提交到仓库。HTTP 模式需要认证时，设置 `MOBILEMCP_AUTH` 并在客户端使用相应的 Bearer token。
 
-**mobile-mcp** is an MCP server for controlling a mobile device. Device may be a real iOS device, real Android device, an iOS Simulator or Android
-Emulator.
+## 问题反馈
 
-You may use mobile-mcp for various tasks, such as app development, marketing automation, quality assurance and so on.
+维护入口：[xue-ding-e/mobile-mcp-allinone](https://github.com/xue-ding-e/mobile-mcp-allinone)。
 
-As a rule of thumb, verify which tools your Agent is invoking. It has access to the device or simulator, it may operate the device to the security
-scope of that device. It is suggested that you use a device that is purposed for this use.
+可公开的问题通过本仓库 Issues 提交，注明提交版本、复现步骤和经过脱敏的日志。涉及凭据或未公开漏洞时，先与仓库维护者确认私下提交渠道，不要在公开 Issue 中粘贴敏感信息。
 
-## Reporting a Vulnerability
-
-To report a security vulnerability, please join our Slack channel at http://mobilenexthq.com/join-slack and DM the moderators with details of the vulnerability.
-
-We take all security reports seriously and will respond as quickly as possible.
-
+安全修复以本仓库实际发布的提交为准，不承诺为所有历史版本提供维护。

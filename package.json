@@ -1,11 +1,11 @@
 {
-  "name": "@mobilenext/mobile-mcp",
-  "mcpName": "io.github.mobile-next/mobile-mcp",
+  "name": "@xue-ding-e/mobile-mcp-allinone",
+  "mcpName": "io.github.xue-ding-e/mobile-mcp-allinone",
   "version": "0.0.1",
-  "description": "Mobile MCP",
+  "description": "Mobile automation MCP and Android CLI with WebView CDP and JSON flow replay",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mobile-next/mobile-mcp.git"
+    "url": "git+https://github.com/xue-ding-e/mobile-mcp-allinone.git"
   },
   "engines": {
     "node": ">=18"
@@ -62,9 +62,9 @@
   "directories": {
     "lib": "lib"
   },
-  "author": "",
+  "author": "xue-ding-e",
   "bugs": {
-    "url": "https://github.com/mobile-next/mobile-mcp/issues"
+    "url": "https://github.com/xue-ding-e/mobile-mcp-allinone/issues"
   },
-  "homepage": "https://github.com/mobile-next/mobile-mcp#readme"
+  "homepage": "https://github.com/xue-ding-e/mobile-mcp-allinone#readme"
 }
