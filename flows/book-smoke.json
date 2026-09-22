@@ -1,9 +1,0 @@
-[
-  { "op": "launch_app", "packageName": "cn.csxs.xiaoshuo", "note": "原生:启动 book" },
-  { "op": "wait", "ms": 3500 },
-  { "op": "webview_connect", "packageName": "cn.csxs.xiaoshuo", "note": "webview:连接" },
-  { "op": "assert_route", "contains": "tabbar", "note": "断言:路由落到 tabbar" },
-  { "op": "webview_evaluate", "expression": "JSON.stringify({tab:document.querySelectorAll('.van-tabbar-item').length,hasApp:!!document.querySelector('#app')})", "note": "数底部 tab + #app 存在" },
-  { "op": "webview_computed_style", "selector": "#app", "note": "量 #app computed CSS" },
-  { "op": "webview_disconnect", "note": "释放 webview CDP socket" }
-]

@@ -154,6 +154,9 @@ const languageOptions = {
 
 export default [
 	{
+		ignores: ["ignore/**", "lib/**", "coverage/**", "test-results/**", "playwright-report/**"],
+	},
+	{
 		files: ["**/*.ts"],
 		plugins,
 		languageOptions,

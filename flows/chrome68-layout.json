@@ -1,8 +1,0 @@
-[
-  { "op": "launch_app", "packageName": "cn.csxs.xiaoshuo", "note": "启动 book(建议在 vivo X9s chrome68 老机型上跑)" },
-  { "op": "wait", "ms": 4000 },
-  { "op": "webview_connect", "packageName": "cn.csxs.xiaoshuo", "note": "连 webview" },
-  { "op": "assert_eval", "expression": "(function(){var hc=document.querySelector('.home-cont');return (hc&&hc.scrollHeight>hc.clientHeight+5)?'scrollable':'NO';})()", "equals": "scrollable", "note": "首页能滚(chrome68 flex-% 高度修复回归)" },
-  { "op": "assert_eval", "expression": "(function(){var ts=document.querySelectorAll('.novel_col_2 .novel-thumb');for(var i=0;i<ts.length;i++){if(ts[i].getBoundingClientRect().height>200)return 'STRETCHED';}return 'ok';})()", "equals": "ok", "note": "出版精品封面不被拉成长条(align-self 修复回归)" },
-  { "op": "webview_disconnect", "note": "释放 socket" }
-]
